@@ -1,0 +1,41 @@
+<html>
+
+	<head>
+		<title> Redwood Recycled Products </title> 
+		<meta name = "keywords" content = "Redwood, Montessori, paper, recycling, products">
+				<link rel = "stylesheet" type = "text/css" href = "styledoc.css"/>
+	</head>
+
+
+	<body>
+	<script> 
+	 // if not yet verified, get password
+	  if (sessionStorage.verified !== "yes" )
+			{
+			  var password; 
+			  password = prompt("What is the password? Hint - it is redwood");
+			   // if password is correct update verified as "yes"
+			  if(password=="redwood")
+			    {  sessionStorage.verified = "yes";
+			       alert("EnterWebsite!"); }
+		      // if password is incorrect alert & reload the page ie ask for password again
+			  else
+			    { alert("Sorry. Incorrect password."); window.location.reload();}
+			  }
+		</script>
+		<h1> Redwood Recycled Product List </h1>
+		<p> <script> document.write("Password "+ sessionStorage.verified ); </script>
+		<li>
+			<a href="TieAndDyeProject.html"> Tie-Dye Cushion Covers </a>
+		</li>
+
+		<li>
+			<a href="product2.html"> Product 2 - Paper bowls </a>
+		</li>
+
+		<li>
+			<a href="product3.html"> Product 3 - Paper book marks </a>
+		</li>
+	</body>
+
+</html>
